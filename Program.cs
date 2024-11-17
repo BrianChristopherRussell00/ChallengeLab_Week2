@@ -74,24 +74,38 @@ namespace ChallengeLab
 
 
 
-//Write a C# Sharp program that takes a number and a width also a number, as input and then displays
-//a triangle of that width, using that number.
-//Test Data
-//Enter a number: 6
-//Enter the desired width: 6
-//Expected Output:
-//
-//666666
-//
-//66666
-//
-//6666
-//
-//666
-//
-//66
-//
-//6
+            //Write a C# Sharp program that takes a number and a width also a number, as input and then displays
+            //a triangle of that width, using that number.
+            //Test Data
+            //Enter a number: 6
+            //Enter the desired width: 6
+            //Expected Output:
+            //
+            //666666
+            //
+            //66666
+            //
+            //6666
+            //
+            //666
+            //
+            //66
+            //
+            //6
+
+            Console.WriteLine("Give me a number?");
+            int numberGiven = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the desired width: ");
+            int desiredWidth = Convert.ToInt32(Console.ReadLine());
+            for ( i=1; i<=desiredWidth; i++)
+            {
+                for (int j =i; j<=desiredWidth;  j++)
+                {
+                    Console.Write(numberGiven + " ");
+                }
+                Console.WriteLine();
+
+            }
 
 
 
